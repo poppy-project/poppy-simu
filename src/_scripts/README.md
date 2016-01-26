@@ -6,7 +6,7 @@ The key file in this folder is `main.js` as it is designated as your bootstrappi
 By default, ES6/2015 features are enabled in your scripts by using [Babel](https://babeljs.io)
 
 ## Adding third-party script libraries
-Odds are that you will need to add some third party libraries to your project at some point. 
+Odds are that you will need to add some third party libraries to your project at some point.  
 To do so, it is strongly recommended that you install them using [NPM](http://npmjs.com/):
 
 ```

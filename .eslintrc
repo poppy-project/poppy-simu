@@ -13,7 +13,6 @@
     "spyOn": true,
     "spyOnEvent": true,
     "waitsFor": true,
-    "expect": true,
     "afterEach": true
   },
   "rules": {
