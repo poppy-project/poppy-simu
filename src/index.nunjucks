@@ -1,7 +1,19 @@
 {% extends '_layouts/base.nunjucks' %}
 
 {% block content %}
-<div class="main-container">
-  index
+<div class="container">
+  <h2 class="hero">Visualize your Poppy Ergo Jr creature in the browser</h2>
+  <hr class="separator">
+  <p>
+    Before using the visualizer, make sure you have a Poppy creature running.<br>
+    If you are not sure, see <a href="#">this documentation entry</a>.
+  </p>
+  <p>
+    If you want to program using <a href="http://snap.berkeley.edu/"><em>Snap!</em></a>,
+    please visit <a href="{{ baseUrl }}snap" target="_blank">this page</a>.
+  </p>
+  <p>
+    <a href="{{ baseUrl }}poppy-ergo-jr" target="_blank">go</a>
+  </p>
 </div>
 {% endblock %}

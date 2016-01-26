@@ -2,19 +2,20 @@
 
 Visualize Poppy creatures in the browser.
 
-Generated on 2016-01-26 using
-[generator-yeogurt@1.5.0](https://github.com/larsonjj/generator-yeogurt)
+## Getting started
 
-## Description
+Make sure you have `bower` and `gulp` installed globally, then:
 
-This is an example readme file.
-Describe your site/app here.
+```bash
+npm install && bower install
+```
 
 ## Technologies used
 
 JavaScript
 - [Browserify](http://browserify.org/)
 - [Node](https://nodejs.org/)
+- [Bower](http://bower.io/)
 
 Testing
 - [Karma](http://karma-runner.github.io/0.13/index.html)

@@ -1,0 +1,22 @@
+{
+  "name": "poppy-simu",
+  "description": "Poppy creatures simulation in the browser",
+  "main": "",
+  "authors": [
+    "Damien Caselli <damien.caselli@gmail.com>"
+  ],
+  "license": "GPLv3",
+  "keywords": [
+    "poppy",
+    "poppy-ergo-jr",
+    "poppy-humanoid",
+    "threejs",
+    "snap"
+  ],
+  "homepage": "https://github.com/poppy-project/poppy-simu",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "Skeleton-Sass": "skeleton-scss#*"
+  }
+}

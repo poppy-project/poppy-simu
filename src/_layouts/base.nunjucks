@@ -17,10 +17,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Poppy Simu</title>
-    <meta name="description" content="Poppy Simulator in the browser.">
+    <title>{{ site.data.global.siteName }}</title>
+    <meta name="description" content="{{ site.data.global.siteDescription }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{baseUrl}}styles/main.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:400,300,700'>
+    <link rel="stylesheet" href="{{ baseUrl }}styles/main.css">
     {% block stylesheets %}{% endblock %}
 
   </head>
@@ -31,11 +32,18 @@
     </p>
     <![endif]-->
 
-    <nav class="topbar">
-      <img src="images/logo-poppy.png" alt="Poppy" class="logo">
+    <nav class="navbar">
+      <div class="container">
+        <a class="logo" href="{{ baseUrl }}"><img src="{{ baseUrl }}images/logo-poppy.png" alt="Poppy"></a>
+        <a href="{{ baseUrl }}snap">Open <em>Snap!</em></a>
+        <a href="{{ baseUrl }}poppy-ergo-jr">Open viewer</a>
+      </div>
     </nav>
 
-    {% block content %}{% endblock %}
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+
 
     {% block scripts %}{% endblock %}
   </body>

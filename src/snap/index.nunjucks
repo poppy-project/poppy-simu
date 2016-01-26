@@ -1,0 +1,44 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% block config %}
+  {# Correct base url pathing for this page #}
+  {% set baseUrl = '../' %}
+{% endblock %}
+
+{% block content %}
+<div class="visualizer">
+  <canvas id="world"></canvas>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  <script type="text/javascript" src="{{ baseUrl }}snap/morphic.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/widgets.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/blocks.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/threads.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/objects.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/gui.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/paint.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/lists.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/byob.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/xml.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/store.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/locale.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/cloud.js"></script>
+  <script type="text/javascript" src="{{ baseUrl }}snap/sha512.js"></script>
+  <script type="text/javascript">
+    var world;
+
+    window.onload = function() {
+      world = new WorldMorph(document.getElementById('world'));
+      world.worldCanvas.focus();
+
+      new IDE_Morph().openIn(world);
+      setInterval(loop, 1);
+    };
+
+    function loop() {
+      world.doOneCycle();
+    }
+  </script>
+{% endblock %}

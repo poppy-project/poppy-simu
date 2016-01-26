@@ -1,0 +1,43 @@
+.navbar {
+  position: fixed;
+  top: 0;
+
+  height: $navbar-height;
+  width: 100%;
+
+  padding: $navbar-padding 0;
+
+  border-bottom: 1px solid $border-color;
+  background-color: $poppy-bg;
+
+  z-index: 1;
+
+  .logo {
+    display: inline-block;
+    height: $navbar-height - 2 * $navbar-padding;
+
+    margin-right: 100px;
+
+    img {
+      max-height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+
+  a {
+    margin-right: 20px;
+
+    color: $font-color;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  & + .content {
+    margin-top: $navbar-height;
+  }
+}
