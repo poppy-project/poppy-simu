@@ -11,6 +11,9 @@
 {% endblock %}
 
 {% block scripts %}
+  <script type="text/javascript">
+    var baseUrl = '{{ baseUrl }}';
+  </script>
   <script src="{{ baseUrl }}vendor/config.js"></script>
   <script data-main="../main" src="{{ baseUrl }}vendor/require.js"></script>
 {% endblock %}

@@ -1,9 +1,9 @@
 // loading stl used
-STLLibrary.add('/vendor/ergo/stl/base.stl', 'base');
-STLLibrary.add('/vendor/ergo/stl/shift_one_side.stl', 'shift_one_side');
-STLLibrary.add('/vendor/ergo/stl/U_side_to_horn.stl', 'U_side_to_horn');
-STLLibrary.add('/vendor/ergo/stl/U_horn_to_horn.stl', 'U_horn_to_horn');
-STLLibrary.add('/vendor/ergo/stl/lamp_head.stl', 'lamp_head');
+STLLibrary.add(baseUrl + 'vendor/ergo/stl/base.stl', 'base');
+STLLibrary.add(baseUrl + 'vendor/ergo/stl/shift_one_side.stl', 'shift_one_side');
+STLLibrary.add(baseUrl + 'vendor/ergo/stl/U_side_to_horn.stl', 'U_side_to_horn');
+STLLibrary.add(baseUrl + 'vendor/ergo/stl/U_horn_to_horn.stl', 'U_horn_to_horn');
+STLLibrary.add(baseUrl + 'vendor/ergo/stl/lamp_head.stl', 'lamp_head');
 
 var ERGOJR = {};
 
