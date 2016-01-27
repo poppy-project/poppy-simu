@@ -30,10 +30,14 @@
     var world;
 
     window.onload = function() {
+      var morph = new IDE_Morph();
+      morph.setLanguage('fr');
+
       world = new WorldMorph(document.getElementById('world'));
       world.worldCanvas.focus();
 
-      new IDE_Morph().openIn(world);
+      morph.openIn(world);
+
       setInterval(loop, 1);
     };
 
