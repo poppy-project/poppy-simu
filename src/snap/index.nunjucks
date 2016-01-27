@@ -7,7 +7,7 @@
 
 {% block content %}
 <div class="visualizer">
-  <canvas id="world"></canvas>
+  <canvas id="world" tabindex="1"></canvas>
 </div>
 {% endblock %}
 
