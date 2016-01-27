@@ -6,14 +6,12 @@
 {% endblock %}
 
 <!DOCTYPE html>
-
 <!--[if lt IE 9]>
-<html class="lt-ie9 no-js" lang="en">
+<html class="lt-ie9 no-js" lang="fr">
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<html lang="en" class="no-js">
+<html lang="fr" class="no-js">
 <!--<![endif]-->
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -35,8 +33,8 @@
     <nav class="navbar">
       <div class="container">
         <a class="logo" href="{{ baseUrl }}"><img src="{{ baseUrl }}images/logo-poppy.png" alt="Poppy"></a>
-        <a href="{{ baseUrl }}snap">Open <em>Snap!</em></a>
-        <a href="{{ baseUrl }}poppy-ergo-jr">Open viewer</a>
+        <a class="button" href="{{ baseUrl }}snap" target="_blank">Ouvrir l'éditeur de blocs <em>Snap!</em></a>
+        <a class="button" href="{{ baseUrl }}poppy-ergo-jr" target="_blank">Ouvrir le visualisateur</a>
       </div>
     </nav>
 
