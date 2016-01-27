@@ -32,8 +32,6 @@ define([ 'dat', 'container' ], function(dat, container) {
   gui.controller.motors.add(gui.guiData, 'm5', -180, 180, 0.025).name('m5').listen();
   gui.controller.motors.add(gui.guiData, 'm6', -180, 180, 0.025).name('m6').listen();
 
-  gui.controller.colorController = gui.gui.addColor(gui.guiData, 'partColor').name('Color').listen();
-
   gui.controller.remote = gui.gui.addFolder('Remote Control');
   gui.controller.remote.add(gui.guiData, 'remoteStatus').name('Enable');
   gui.controller.remoteHost = gui.controller.remote.add(gui.guiData, 'remoteHost').name('Host');

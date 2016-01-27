@@ -9,13 +9,6 @@ define([ 'ergojr', 'pypot', 'gui' ], function(ERGOJR, PYPOT, gui) {
     octopus.ergo = ergo;
   }
 
-  // setting up callback on gui events
-  gui.guiData.partColor = ERGOJR.printedPartsColor;
-
-  gui.controller.colorController.onChange(function(value) {
-    octopus.ergo.setColor(new THREE.Color(gui.guiData.partColor));
-  });
-
   gui.controller.remoteHost.onChange(function(value) {
     PYPOT.HOST = gui.guiData.remoteHost;
   });
