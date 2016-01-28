@@ -31,10 +31,10 @@
     <![endif]-->
 
     <nav class="navbar">
-      <div class="container">
+      <div class="inner">
         <a class="logo" href="{{ baseUrl }}"><img src="{{ baseUrl }}images/logo-poppy.png" alt="Poppy"></a>
-        <a class="button" href="{{ baseUrl }}snap" target="_blank">Ouvrir l'éditeur de blocs <em>Snap!</em></a>
-        <a class="button" href="{{ baseUrl }}poppy-ergo-jr" target="_blank">Ouvrir le visualisateur</a>
+        <a href="{{ baseUrl }}snap" target="_blank">Ouvrir l'éditeur <em>Snap!</em></a>
+        <a href="{{ baseUrl }}poppy-ergo-jr" target="_blank">Ouvrir le visualisateur</a>
       </div>
     </nav>
 
