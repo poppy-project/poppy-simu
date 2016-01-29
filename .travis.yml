@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+- "4.1"
+env:
+  matrix:
+  - CXX=g++-4.8
+  global:
+  - GIT_EMAIL: poppy-bot-ci@inria.fr
+  - GIT_NAME: poppy-bot
+  - GH_USERNAME: poppy-project
+  - GH_REPO: poppy-simu
+  - secure: "TgJGS9wFmr9zrUSMFDSH/p4sj77+6FwGUpQin4Sfl97cEXoHjeKrDsJvkEV8HZG2mAHnMyMeEqnzJbmCdhCB+9GAu31hdpXies6fA0tFDgtMUbf2lD16M7pL8jJ3zTxR4FCXLLd6ST3x+HLSrPfITkbNvOt1jmgVXdVTHKsSLRM="
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+install:
+- npm install
+- npm install -g bower gulp
+- bower install
+script:
+- gulp --production
+- bash ./ci/deploy.sh
