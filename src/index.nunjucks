@@ -6,14 +6,19 @@
   <h2 class="hero">Poppy Ergo Jr pour le navigateur</h2>
   <hr class="separator">
   <p>
-    Avant de pouvoir utiliser le visualisateur, vous devez avoir une instance
+    Pour utiliser le visualisateur, vous devez avoir une instance
     d'une créature en cours d'exécution.<br>
     Si vous ne connaissez pas la marche à suivre, veuillez vous référer à
-    <a href="http://poppy-project.github.io/poppy-docs/#create-the-robot-object---with-web-simulator">ce paragraphe</a> de la documentation.
+    <a href="{{ site.data.global.docUrl }}">la documentation</a>.
   </p>
   <p>
-    Pour programmer en utilisant les blocs <a href="http://snap.berkeley.edu/" target="_blank"><em>Snap!</em></a>,
-    vous pouvez utiliser <a href="{{ baseUrl }}snap" target="_blank">cette page</a>.
+    Vous devez aussi utiliser un <a href="http://caniuse.com/#search=webgl" target="_blank">navigateur supportant le WebGL</a>,
+    comme Firefox ou Chromium (Chrome).
+  </p>
+  <hr class="separator">
+  <p class="actions">
+    <a class="button button-primary" href="{{ baseUrl }}poppy-ergo-jr" target="_blank">Ouvrir le visualisateur</a><br>
+    <a class="button button-primary" href="{{ baseUrl }}snap" target="_blank">Ouvrir l'éditeur <em>Snap!</em></a>
   </p>
 </div>
 {% endblock %}

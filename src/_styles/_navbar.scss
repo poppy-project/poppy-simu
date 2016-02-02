@@ -34,25 +34,6 @@
     }
   }
 
-  a {
-    color: $font-color;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: white;
-
-    @media (max-width: 960px) {
-      font-size: 13px;
-    }
-
-    &:hover {
-      color: $link-color;
-    }
-
-    + a {
-      margin-left: 20px;
-    }
-  }
-
   & + .content {
     margin-top: $navbar-height;
   }
