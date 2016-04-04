@@ -1,0 +1,19 @@
+# Site settings
+title: Poppy Simu
+description: Visualisateur pour les créatures Poppy.
+
+# baseurl: "/poppy-simu"
+# url: "http://poppy-project.github.io"
+
+# Build settings
+markdown: kramdown
+
+include: [ "_pages" ]
+
+exclude: [
+  "Gemfile",
+  "Gemfile.lock"
+]
+
+docs_url: "http://docs.poppy-project.org/en/getting-started/visualize.html"
+ga_id: UA-44384879-4
