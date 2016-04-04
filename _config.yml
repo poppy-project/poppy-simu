@@ -2,7 +2,7 @@
 title: Poppy Simu
 description: Visualisateur pour les créatures Poppy.
 
-# url: "http://poppy-project.github.io"
+# url: "http://simu.poppy-project.org"
 
 # Build settings
 markdown: kramdown
