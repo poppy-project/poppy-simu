@@ -7,5 +7,5 @@ word-sentence.xml	Words, sentences
 cases.xml	Multi-branched conditional (switch)
 leap-library.xml	LEAP Motion controller
 setrgb.xml	Set RGB or HSV pen color
-penTrails.xml   Save and restore pictures drawn by pen
-poppy-ergo-jr-lib.xml Poppy Ergo Jr
+penTrails.xml	Save and restore pictures drawn by pen
+poppy-ergo-jr-lib.xml	Poppy Ergo Jr
