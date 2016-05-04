@@ -3,19 +3,25 @@ poppy-simu
 
 Visualize Poppy creatures in the browser.
 
-**Warning: even it intends to works for every Poppy robots, it only works now a day for [Poppy Ergo Jr](https://github.com/poppy-project/poppy-ergo-jr)**.
+**Warning: even if its goal is to work with every Poppy robots, at the moment it only works with [Poppy Ergo Jr](https://github.com/poppy-project/poppy-ergo-jr)**.
+
+![poppy-simu](http://docs.poppy-project.org/en/getting-started/poppy-visu.gif)
+
+
 ## Installation
-Even if the viewer is in a web browser, you still need to install software on your computer that will run the robot.
+
+The viewer is in a web browser. Yet, you still need to install software on your computer that will run the robot.
 
 First you need to install Python, if you don't have any knowledges in scientific Python we strongly recommand to use a pre-packaged distribution such as [Anaconda](http://continuum.io/downloads).
-You have to install the creature software, for Poppy Ergo jr robot you need to install [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr/tree/master/software) package (the easiest way is with `pip install poppy-ergo-jr`).
+
+Then, you have to install the creature software. for Poppy Ergo Jr robot you need to install the  [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr/tree/master/software) package (the easiest way is with `pip install poppy-ergo-jr`).
 
 **For more informations, refer to the [poppy documentation](http://docs.poppy-project.org/en/installation/index.html)**.
 
 
 ## Run poppy-simu website 
 
-If you install everything correctly, you can controll from Snap_!_ with 
+If you have installed everything correctly, you can controll from Snap_!_ with 
 ```
 poppy-services --poppy-simu --snap poppy-ergo-jr
 ```
@@ -25,8 +31,6 @@ Or in Python with
 from poppy.creatures import PoppyErgoJr
 robot = PoppyErgoJr(simulator='poppy-simu')
 ```
-![poppy-simu](http://docs.poppy-project.org/en/getting-started/poppy-visu.gif)
-
 
 To use poppy-simu website, you can:
 - **use the online version at http://simu.poppy-project.org (prefered solution)**
