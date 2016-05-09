@@ -5,7 +5,7 @@ Visualize Poppy creatures in the browser.
 
 **Warning: even if its goal is to work with every Poppy robots, at the moment it only works with [Poppy Ergo Jr](https://github.com/poppy-project/poppy-ergo-jr)**.
 
-![poppy-simu](http://docs.poppy-project.org/en/getting-started/poppy-visu.gif)
+![poppy-simu](http://docs.poppy-project.org/en/img/visu/python-setup.gif)
 
 
 ## Installation
@@ -36,13 +36,15 @@ To use poppy-simu website, you can:
 - **use the online version at http://simu.poppy-project.org (prefered solution)**
 - fetch it locally from the 'gh-pages' git branch if you want to use it offline (you'll have to setup a webserver)
 ```bash
-git clone https://github.com/poppy-project/poppy-simu.git && cd poppy-simu
-git checkout gh-pages
+wget https://github.com/poppy-project/poppy-simu/archive/gh-pages.zip
+unzip gh-pages.zip && rm gh-pages.zip
+cd poppy-simu-gh-pages/
 python -m SimpleHTTPServer
 ```
-- clone the git repository and build it with jekyll (for development only)
+- clone the git repository and build it with jekyll (for development only), Ruby is required
 ```bash
 git clone https://github.com/poppy-project/poppy-simu.git && cd poppy-simu
+gem install bundler
 bundle install
 jekyll serve
 ```
