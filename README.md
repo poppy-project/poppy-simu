@@ -10,49 +10,66 @@ Visualize Poppy creatures in the browser.
 
 ## Installation
 
-The viewer is in a web browser. Yet, you still need to install software on your computer that will run the robot.
+The viewer is in a web browser. Yet, **you still need to install software on your computer that will run the robot**.
 
-First you need to install Python, if you don't have any knowledges in scientific Python we strongly recommand to use a pre-packaged distribution such as [Anaconda](http://continuum.io/downloads).
+First you need to install Python, if you don't have any knowledge in scientific Python we strongly recommand to use a pre-packaged distribution such as [Anaconda](http://continuum.io/downloads).
 
-Then, you have to install the creature software. for Poppy Ergo Jr robot you need to install the  [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr/tree/master/software) package (the easiest way is with `pip install poppy-ergo-jr`).
+Then, you have to install the creature software. For Poppy Ergo Jr robot you need to install the [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr/tree/master/software) package (the easiest way is with `pip install poppy-ergo-jr`).
 
-**For more informations, refer to the [poppy documentation](http://docs.poppy-project.org/en/installation/index.html)**.
+**For more informations, refer to the [Poppy documentation](http://docs.poppy-project.org/en/installation/index.html)**.
 
+## Run the simulated creature
 
-## Run poppy-simu website 
+If you have installed everything correctly, you can control from Snap<em>!</em> with
 
-If you have installed everything correctly, you can controll from Snap_!_ with 
-```
+```bash
 poppy-services --poppy-simu --snap poppy-ergo-jr
 ```
 
 Or in Python with
+
 ```python
 from poppy.creatures import PoppyErgoJr
 robot = PoppyErgoJr(simulator='poppy-simu')
 ```
 
-To use poppy-simu website, you can:
-- **use the online version at http://simu.poppy-project.org (prefered solution)**
-- fetch it locally from the 'gh-pages' git branch if you want to use it offline (you'll have to setup a webserver)
+## Run the poppy-simu web interface
+
+### I - Online version
+
+An online version is available at http://simu.poppy-project.org.  
+This is the recommended way to use it, as it does not require any other installation on your side.
+
+### II - Download and serve the latest version
+
+You can download it locally from the `gh-pages` branch [archive](https://github.com/poppy-project/poppy-simu/archive/gh-pages.zip).
+
+This setup requires a running webserver running, _YMMV_.
+
+For instance, using Python:
+
 ```bash
-wget https://github.com/poppy-project/poppy-simu/archive/gh-pages.zip
-unzip gh-pages.zip && rm gh-pages.zip
-cd poppy-simu-gh-pages/
+cd /path/to/poppy-simu-gh-pages/
 python -m SimpleHTTPServer
 ```
-- clone the git repository and build it with jekyll (for development only), Ruby is required
+
+### III - Serve from the source code
+
+This is not the way you should choose unless you need to modify the `poppy-simu` website code.
+
+You have to clone the git repository and build it with [Jekyll](http://jekyllrb.com/).
+
 ```bash
 git clone https://github.com/poppy-project/poppy-simu.git && cd poppy-simu
 gem install bundler
 bundle install
-jekyll serve
+bundle exec jekyll serve
 ```
 
 ## Support
 
-You need support ?
-The [Poppy forum](https://forum.poppy-project.org) is the best (and single) place to ask for help !
+You need support?
+The [Poppy forum](https://forum.poppy-project.org) is the right place to ask for help!
 
 ## Contributing
 
@@ -69,14 +86,12 @@ All the technological development work made in the Poppy project is freely avail
 | Title  | [Creative Commons BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)  |[GPL v3](http://www.gnu.org/licenses/gpl.html)  |
 | Logo  | [![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) ](http://creativecommons.org/licenses/by-sa/4.0/)  |[![GPL V3](https://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)  |
 
-
 ## The Poppy project history
 
 The Poppy project is born in 2012 in the [Flowers laboratory](https://flowers.inria.fr/) at [Inria Bordeaux Sud-Ouest](http://www.inria.fr/en/centre/bordeaux).
 It was initiated during [Matthieu Lapeyre](https://github.com/matthieu-lapeyre)'s PhD Thesis surpervised by [Pierre Yves Oudeyer](http://www.pyoudeyer.com/). At the beginning, the development team was composed by [Matthieu Lapeyre](https://github.com/matthieu-lapeyre) (mechanics & design), [Pierre Rouanet](https://github.com/pierre-rouanet) (software) and [Jonathan Grizou](http://jgrizou.com/) (electronics).
 
 This project is initially a fundamental research project financed by [ERC Grant Explorer](http://erc.europa.eu/) to explore the role of embodiement and morphology properties on cognition and especially on the learning of sensori-motor tasks.
-
 
 ## More on the project
 
@@ -88,4 +103,3 @@ This project is initially a fundamental research project financed by [ERC Grant 
 - [Flickr](https://www.flickr.com/photos/poppy-project)
 - [Vimeo](https://vimeo.com/poppyproject)
 - [Thingiverse](http://www.thingiverse.com/poppy_project/)
-
