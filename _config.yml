@@ -1,8 +1,6 @@
 # Site settings
-title: Visualisateur Poppy Ergo Jr
-description: Visualisateur WebGL pour le robot Poppy Ergo Jr.
-
-# url: "http://simu.poppy-project.org"
+title: "Visualisateur Poppy Ergo Jr"
+description: "Visualisateur WebGL pour le robot Poppy Ergo Jr."
 
 # Build settings
 markdown: kramdown

@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+
+rm -rf .git
 cd _site
 git init
 git config --global user.email $GIT_EMAIL
