@@ -20,7 +20,7 @@ Then, you have to install the creature software. For Poppy Ergo Jr robot you nee
 
 ## Run the simulated creature
 
-If you have installed everything correctly, you can control from Snap<em>!<em> with
+If you have installed everything correctly, you can control from Snap<em>!</em> with
 
 ```bash
 poppy-services --poppy-simu --snap poppy-ergo-jr
