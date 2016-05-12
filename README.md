@@ -51,6 +51,7 @@ For instance, using Python:
 ```bash
 cd /path/to/poppy-simu-gh-pages/
 python -m SimpleHTTPServer
+# browse to http://127.0.0.1:8000
 ```
 
 ### III - Serve from the source code
