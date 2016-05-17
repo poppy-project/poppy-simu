@@ -47,7 +47,7 @@ define([ 'dat', 'container' ], function(dat, container) {
   gui.controller.motors.open();
 
   gui.controller.remote = gui.gui.addFolder('Contrôle à distance');
-  gui.controller.remote.add(gui.guiData, 'remoteStatus').name('Synchroniser avec le robot');
+  gui.controller.remote.add(gui.guiData, 'remoteStatus').name('Synchroniser');
   gui.controller.remoteHost = gui.controller.remote.add(gui.guiData, 'remoteHost').name('Hôte');
   gui.controller.remotePort = gui.controller.remote.add(gui.guiData, 'remotePort').name('Port');
   gui.controller.remoteFrequency = gui.controller.remote.add(gui.guiData, 'remoteFrequency', 1, 35, 1).name('Fréquence');
