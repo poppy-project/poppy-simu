@@ -29,7 +29,7 @@ define([ 'dat', 'container' ], function(dat, container) {
 
     partColor: 0xFFFFFF,
 
-    remoteStatus: false,
+    remoteStatus: remoteHost ? true : false,
     remoteHost: remoteHost || '127.0.0.1',
     remotePort: remotePort || '8080',
     remoteFrequency: 20,
