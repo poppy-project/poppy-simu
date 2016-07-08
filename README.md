@@ -44,15 +44,15 @@ This is the recommended way to use it, as it does not require any other installa
 
 You can download it locally from the `gh-pages` branch [archive](https://github.com/poppy-project/poppy-simu/archive/gh-pages.zip).
 
-This setup requires a running webserver running, _YMMV_.
+This setup requires a running webserver.
 
 For instance, using Python:
-
 ```bash
 cd /path/to/poppy-simu-gh-pages/
 python -m SimpleHTTPServer
-# browse to http://127.0.0.1:8000
 ```
+You can open the website with the URL `http://127.0.0.1:8000` on your web browser.
+
 
 ### III - Serve from the source code
 
