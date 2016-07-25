@@ -12,7 +12,7 @@ Visualize Poppy creatures in the browser.
 
 The viewer is in a web browser. Yet, **you still need to install software on your computer that will run the robot**.
 
-First you need to install Python, if you don't have any knowledge in scientific Python we strongly recommand to use a pre-packaged distribution such as [Anaconda](http://continuum.io/downloads).
+First you need to install Python, if you don't have any knowledge in scientific Python we strongly recommend to use a pre-packaged distribution such as [Anaconda](http://continuum.io/downloads).
 
 Then, you have to install the creature software. For Poppy Ergo Jr robot you need to install the [poppy-ergo-jr](https://github.com/poppy-project/poppy-ergo-jr/tree/master/software) package (the easiest way is with `pip install poppy-ergo-jr`).
 
@@ -80,19 +80,14 @@ To contribute to this repository, you can [fork it](https://help.github.com/arti
 
 ## License
 
-All the technological development work made in the Poppy project is freely available under open source licenses. Only the name usage *"Poppy"* is restricted and protected as an international trademark, please contact us if you want to use it or have more information.
-
-|   License     |     Hardware    |   Software      |
-| ------------- | :-------------: | :-------------: |
-| Title  | [Creative Commons BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)  |[GPL v3](http://www.gnu.org/licenses/gpl.html)  |
-| Logo  | [![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png) ](http://creativecommons.org/licenses/by-sa/4.0/)  |[![GPL V3](https://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)  |
+See [LICENSE](LICENSE.md) file.
 
 ## The Poppy project history
 
 The Poppy project is born in 2012 in the [Flowers laboratory](https://flowers.inria.fr/) at [Inria Bordeaux Sud-Ouest](http://www.inria.fr/en/centre/bordeaux).
-It was initiated during [Matthieu Lapeyre](https://github.com/matthieu-lapeyre)'s PhD Thesis surpervised by [Pierre Yves Oudeyer](http://www.pyoudeyer.com/). At the beginning, the development team was composed by [Matthieu Lapeyre](https://github.com/matthieu-lapeyre) (mechanics & design), [Pierre Rouanet](https://github.com/pierre-rouanet) (software) and [Jonathan Grizou](http://jgrizou.com/) (electronics).
+It was initiated during [Matthieu Lapeyre](https://github.com/matthieu-lapeyre)'s PhD Thesis supervised by [Pierre Yves Oudeyer](http://www.pyoudeyer.com/). At the beginning, the development team was composed by [Matthieu Lapeyre](https://github.com/matthieu-lapeyre) (mechanics & design), [Pierre Rouanet](https://github.com/pierre-rouanet) (software) and [Jonathan Grizou](http://jgrizou.com/) (electronics).
 
-This project is initially a fundamental research project financed by [ERC Grant Explorer](http://erc.europa.eu/) to explore the role of embodiement and morphology properties on cognition and especially on the learning of sensori-motor tasks.
+This project is initially a fundamental research project financed by [ERC Grant Explorer](http://erc.europa.eu/) to explore the role of embodiment and morphology properties on cognition and especially on the learning of sensori-motor tasks.
 
 ## More on the project
 
