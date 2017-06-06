@@ -10,7 +10,10 @@ include: [ "_pages" ]
 exclude: [
   "Gemfile",
   "Gemfile.lock",
-  "README.md"
+  "Rakefile",
+  "README.md",
+  "LICENSE.md",
+  "vendor"
 ]
 
 docs_url: "http://docs.poppy-project.org/en/getting-started/visualize.html"
