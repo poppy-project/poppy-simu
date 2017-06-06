@@ -1,16 +1,12 @@
 language: ruby
 rvm:
 - 2.2.4
+sudo: false
 env:
   global:
-  - GIT_EMAIL: poppy-bot-ci@inria.fr
-  - GIT_NAME: poppy-bot
-  - GH_USERNAME: poppy-project
-  - GH_REPO: poppy-simu
-  - secure: I6fBFa0A9cm6meKUcgnpHiclDtBERODkpBiaDOy7SWra9EIXTx2bLyH0XYr3+hYOc9ram/7AvvpHTxtnrou3o0vDaicSphDL/SLmLqs2UGFjet039l2wd+XRs4Xkf+ftoGH/iHXprqR/Gq63tf2kjedglED75nUap2iUNsOo9PX9nGrfCXz3+kuqlJQFCnSxzsFKPJBcLPfn3cG0vrybN43WJglmwPim28jG2XYxyR+NuXjVE/bU22B1Ak2jE1t4aEFnEFKW7gekBTcgMkwk6JgJTQ1Hyf1fivkymclKR4byUhwGqqrYGSJGkhZszM/UxuwmpmgCzd/Zwyq346xvn0tyJDjKr3hcpzX1p9t2n9tBPiSEUhE/Em0GIjjjNIaMJnLL/EEtxHK8WXQfmWloKd0Ti+ruJul/U/uwEEXrmH+UaZQwKzxU0m8L20fk8qxTYhk6zkgGt/FCv5MXodS0GzHp6+wuaLEv6hMGQM7Y4NDsV/1WI05noO6yu/0mytbRaPquZhq+ZefXGmLIJYhLK7CaP5y1wz4355k/UhETYOWgVKX9vLSHSNYG1H7TXAIAReiOPTjaLsyLag28luaZpTofZ9Ea2eArKTNh7k2qtVRaeabymGTl2iuqNIqBGt6+NNkB0lDBToMCLl49AqBVZ3t87NYOjEalWZZ3RrxofQQ=
+  - secure: "HAGLjaghWcflUyGN2u3YimxUZUHe7gK1/hcHGqSh7x86vbjuU/PPvVzQTSpI5sNSWniiYqMc48N0dEJIqUQInpgLe56rDg6uo/EPmlRQLtKBGppy+XN9+BJSuanQwcfsnmxyUex2dxwM2XM4feir3QMS1dbFBQPhPxHMrUT5gjL2BlFC8NzZ4MwKcp6b4KGCZ6KEeQ/CufwsQYFaHGra6GhC1pcSZzzIajNOFnXoiqIGG/5HFsf8SRxCWuppsU8v+T+7s3GBoaWkHK+armC1KU0+k2NvO6Q3vqMOUWu/qGCa40lrtUTkn2Ynw5Ay/IvWiCQrQAerpa9cBFrD4fOlWylq7N5t7JWwbmdp7CEsPTs5rjX590+Dw0+PMoIwMNu9UDTPRwOF5/mIisnMlJHqLBBz2aLaIj8GWLZOgefrh+cB/dsbWpRvUDAjJvBviEdxaZfGM4JzV0+LUi8cMGpSss2T/9VCijNNgFFCwUOl9xMUSI9BA0UQbakOd8+Yt8mayEU6QIdSrQn36DPU7FtDEYEhSL5KTWZpC96dDPbS4ghoYyjDsAmlu3QiuMBWfOi4ElH0szBA2e2HHpOyUO+K8uQZd/UQM4XHRYyU+/Op0jwvumO3jz6utcz4Ia2e5ZT/UMArc2xj4QFrPVYjezIn2kVLwCwTcnc5q/rdMKFcu3A="
 script: "./_script/cibuild.sh"
 deploy:
   skip_cleanup: true
   provider: script
   script: _script/cideploy.sh
-sudo: false
