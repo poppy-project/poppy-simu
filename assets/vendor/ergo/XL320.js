@@ -1,7 +1,7 @@
 // loading stl used
-STLLibrary.add(baseUrl + 'vendor/ergo/stl/XL320_box.stl', 'XL320_box');
-STLLibrary.add(baseUrl + 'vendor/ergo/stl/XL320_top_horn.stl', 'XL320_top_horn');
-STLLibrary.add(baseUrl + 'vendor/ergo/stl/XL320_bottom_horn.stl', 'XL320_bottom_horn');
+STLLibrary.add(baseUrl + '/vendor/ergo/stl/XL320_box.stl', 'XL320_box');
+STLLibrary.add(baseUrl + '/vendor/ergo/stl/XL320_top_horn.stl', 'XL320_top_horn');
+STLLibrary.add(baseUrl + '/vendor/ergo/stl/XL320_bottom_horn.stl', 'XL320_bottom_horn');
 
 var XL320 = {};
 

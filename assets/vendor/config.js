@@ -1,5 +1,5 @@
 var require = {
-  baseUrl: baseUrl + 'vendor/app',
+  baseUrl: baseUrl + '/vendor/app',
   shim: {
     // -- ergo
     'STLLibrary': {
