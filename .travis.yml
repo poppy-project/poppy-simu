@@ -1,12 +1,15 @@
 language: ruby
 rvm:
 - 2.2.4
-sudo: false
 env:
   global:
+  - GIT_EMAIL: poppy-bot-ci@inria.fr
+  - GIT_NAME: poppy-bot
+  - GITHUB_REPO: "poppy-project/poppy-simu"
   - secure: "HAGLjaghWcflUyGN2u3YimxUZUHe7gK1/hcHGqSh7x86vbjuU/PPvVzQTSpI5sNSWniiYqMc48N0dEJIqUQInpgLe56rDg6uo/EPmlRQLtKBGppy+XN9+BJSuanQwcfsnmxyUex2dxwM2XM4feir3QMS1dbFBQPhPxHMrUT5gjL2BlFC8NzZ4MwKcp6b4KGCZ6KEeQ/CufwsQYFaHGra6GhC1pcSZzzIajNOFnXoiqIGG/5HFsf8SRxCWuppsU8v+T+7s3GBoaWkHK+armC1KU0+k2NvO6Q3vqMOUWu/qGCa40lrtUTkn2Ynw5Ay/IvWiCQrQAerpa9cBFrD4fOlWylq7N5t7JWwbmdp7CEsPTs5rjX590+Dw0+PMoIwMNu9UDTPRwOF5/mIisnMlJHqLBBz2aLaIj8GWLZOgefrh+cB/dsbWpRvUDAjJvBviEdxaZfGM4JzV0+LUi8cMGpSss2T/9VCijNNgFFCwUOl9xMUSI9BA0UQbakOd8+Yt8mayEU6QIdSrQn36DPU7FtDEYEhSL5KTWZpC96dDPbS4ghoYyjDsAmlu3QiuMBWfOi4ElH0szBA2e2HHpOyUO+K8uQZd/UQM4XHRYyU+/Op0jwvumO3jz6utcz4Ia2e5ZT/UMArc2xj4QFrPVYjezIn2kVLwCwTcnc5q/rdMKFcu3A="
 script: "./_script/cibuild.sh"
 deploy:
   skip_cleanup: true
   provider: script
   script: _script/cideploy.sh
+sudo: false
