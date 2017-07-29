@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url("/assets/fonts/Lato/Lato-Light.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url("/assets/fonts/Lato/Lato-LightItalic.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url("/assets/fonts/Lato/Lato-Regular.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url("/assets/fonts/Lato/Lato-Italic.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url("/assets/fonts/Lato/Lato-Bold.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url("/assets/fonts/Lato/Lato-BoldItalic.woff2") format("woff2"); }
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+p {
+  font-size: 1.6rem;
+  text-align: center; }
+
+.actions .button-primary {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 2rem; }
+
+.hero {
+  margin: 0 auto;
+  padding: 7rem 0;
+  text-align: center; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 58px;
+  width: 100%;
+  border-bottom: 1px solid #bbb;
+  background-color: #ffffff;
+  z-index: 1; }
+  .navbar > .inner {
+    width: 100%;
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    white-space: nowrap; }
+  .navbar .logo {
+    display: inline-block;
+    height: 38px;
+    margin-right: 40px; }
+    .navbar .logo img {
+      max-height: 100%;
+      vertical-align: middle; }
+  .navbar + .content {
+    margin-top: 58px; }
+
+.visualizer {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 58px);
+  display: block; }
+  .visualizer canvas {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.visualizer-gui {
+  position: fixed;
+  top: 59px;
+  right: 0; }
+  .visualizer-gui li {
+    margin: 0; }
+  .visualizer-gui input {
+    margin: 0; }
+  .visualizer-gui .dg input {
+    height: auto;
+    line-height: normal;
+    border-radius: 0; }
+  .visualizer-gui .dg .close-button {
+    display: none; }
+  .visualizer-gui .dg.main.taller-than-window .close-button {
+    border-top: 1px solid #ddd; }
+  .visualizer-gui .dg.main .close-button {
+    background-color: #ccc; }
+  .visualizer-gui .dg.main .close-button:hover {
+    background-color: #ddd; }
+  .visualizer-gui .dg {
+    color: #555;
+    text-shadow: none !important; }
+  .visualizer-gui .dg.main::-webkit-scrollbar {
+    background: #fafafa; }
+  .visualizer-gui .dg.main::-webkit-scrollbar-thumb {
+    background: #bbb; }
+  .visualizer-gui .dg li:not(.folder) {
+    background: #fafafa;
+    border-bottom: 1px solid #ddd; }
+  .visualizer-gui .dg li.save-row .button {
+    text-shadow: none !important; }
+  .visualizer-gui .dg li.title {
+    background: #e8e8e8 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat; }
+  .visualizer-gui .dg .cr.function:hover, .visualizer-gui .dg .cr.boolean:hover {
+    background: #fff; }
+  .visualizer-gui .dg .c input[type=text] {
+    background: #e9e9e9; }
+  .visualizer-gui .dg .c input[type=text]:hover {
+    background: #eee; }
+  .visualizer-gui .dg .c input[type=text]:focus {
+    background: #eee;
+    color: #555; }
+  .visualizer-gui .dg .c .slider {
+    background: #e9e9e9; }
+  .visualizer-gui .dg .c .slider:hover {
+    background: #eee; }
+
+#stats {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100; }
+
+.separator {
+  height: 0;
+  width: 100%;
+  display: block;
+  line-height: 0;
+  border-top: 1px solid #bbb;
+  font-size: 0; }
