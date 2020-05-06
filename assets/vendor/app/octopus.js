@@ -7,14 +7,17 @@ define([ 'ergojr', 'pypot', 'gui' ], function(ERGOJR, PYPOT, gui) {
     octopus.ergo = ergo;
   }
 
+  PYPOT.HOST = gui.guiData.remoteHost;
   gui.controller.remoteHost.onChange(function(value) {
     PYPOT.HOST = gui.guiData.remoteHost;
   });
 
+  PYPOT.PORT = gui.guiData.remotePort;
   gui.controller.remotePort.onChange(function(value) {
     PYPOT.PORT = gui.guiData.remotePort;
   });
 
+  PYPOT.FREQ = gui.guiData.remoteFrequency;
   gui.controller.remoteFrequency.onChange(function(value) {
     PYPOT.FREQ = gui.guiData.remoteFrequency;
     if (gui.guiData.remoteStatus) {
