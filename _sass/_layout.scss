@@ -28,51 +28,10 @@ p {
   text-align: center;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-
-  height: $navbar-height;
-  width: 100%;
-
-  border-bottom: 1px solid $border-color;
-  background-color: $poppy-bg;
-
-  z-index: 1;
-
-  > .inner {
-    width: 100%;
-    max-width: 960px;
-
-    display: block;
-
-    margin: 0 auto;
-    padding: $navbar-padding;
-
-    white-space: nowrap;
-  }
-
-  .logo {
-    display: inline-block;
-    height: $navbar-height - 2 * $navbar-padding;
-
-    margin-right: 40px;
-
-    img {
-      max-height: 100%;
-      vertical-align: middle;
-    }
-  }
-
-  & + .content {
-    margin-top: $navbar-height;
-  }
-}
-
 .visualizer {
   position: relative;
   width: 100%;
-  height: calc(100vh - #{$navbar-height});
+  height: 100vh;
 
   display: block;
 
@@ -86,7 +45,7 @@ p {
 
 .visualizer-gui {
   position: fixed;
-  top: $navbar-height + 1px;
+  top: 1px;
   right: 0;
 
   li {
