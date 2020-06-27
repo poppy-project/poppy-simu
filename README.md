@@ -29,7 +29,7 @@ poppy-services --poppy-simu --snap poppy-ergo-jr
 Or in Python with
 
 ```python
-from poppy.creatures import PoppyErgoJr
+from pypot.creatures import PoppyErgoJr
 robot = PoppyErgoJr(simulator='poppy-simu')
 ```
 
