@@ -2,5 +2,5 @@
 
 # Allow crawling of all content
 User-agent: *
-#Disallow: /snap/
+Disallow: /snap/
 Disallow: /poppy-ergo-jr/
