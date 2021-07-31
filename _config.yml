@@ -16,4 +16,5 @@ exclude: [
   "vendor"
 ]
 
-docs_url: "http://docs.poppy-project.org/fr/getting-started/visualize.html"
+docs_url: "https://docs.poppy-project.org/fr/getting-started/visualize.html"
+scratch_url: "https://scratch.poppy-project.org/"
