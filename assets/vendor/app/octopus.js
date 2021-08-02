@@ -17,6 +17,19 @@ define([ 'ergojr', 'pypot', 'gui' ], function(ERGOJR, PYPOT, gui) {
     PYPOT.PORT = gui.guiData.remotePort;
   });
 
+  PYPOT.REST = gui.guiData.remoteAPI;
+  gui.controller.remoteAPI.onChange(function(value) {
+    PYPOT.REST = gui.guiData.remoteAPI;
+    console.log(value);
+    if (value) {
+      console.log(gui.controller.remoteAPI.name);
+      gui.controller.remoteAPI.name("API Rest/Scratch");
+    } else {
+      console.log(gui.controller.remoteAPI.name);
+      gui.controller.remoteAPI.name("API Snap");
+    }
+  });
+
   PYPOT.FREQ = gui.guiData.remoteFrequency;
   gui.controller.remoteFrequency.onChange(function(value) {
     PYPOT.FREQ = gui.guiData.remoteFrequency;

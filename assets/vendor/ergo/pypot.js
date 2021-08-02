@@ -5,6 +5,7 @@ define([ 'gui' ], function(gui) {
   var PYPOT = {
     HOST: '127.0.0.1',
     PORT: '8080',
+    REST: true,  // true = REST API, false = snap API
     FREQ: 20,
     motors: {},
     pollRequest: null,
@@ -42,7 +43,11 @@ define([ 'gui' ], function(gui) {
       return;
     }
 
-    pollUrl = 'http://' + PYPOT.HOST + ':' + PYPOT.PORT + '/motors/register/present_position';
+    if (PYPOT.REST) {
+      pollUrl = 'http://' + PYPOT.HOST + ':' + PYPOT.PORT + '/motors/registers/present_position/list.json';
+    } else {
+      pollUrl = 'http://' + PYPOT.HOST + ':' + PYPOT.PORT + '/motors/register/present_position';
+    }
     PYPOT.pollRequest = new XMLHttpRequest();
 
     PYPOT.pollRequest.onreadystatechange = function() {
@@ -51,9 +56,16 @@ define([ 'gui' ], function(gui) {
       if (PYPOT.pollRequest.readyState === 4) {
         if (PYPOT.pollRequest.status === 200) {
           res = JSON.parse(PYPOT.pollRequest.responseText);
-          for (var motorId in res) {
-            PYPOT.motors[motorId] = res[motorId].present_position;
-            gui.guiData[motorId] = res[motorId].present_position;
+          if (PYPOT.REST) {
+            for (var motorId in res["present_position"]) {
+              PYPOT.motors[motorId] = res["present_position"][motorId];
+              gui.guiData[motorId] = res["present_position"][motorId];
+            }
+          } else {
+            for (var motorId in res) {
+              PYPOT.motors[motorId] = res[motorId].present_position;
+              gui.guiData[motorId] = res[motorId].present_position;
+            }
           }
           PYPOT.pollRequest = null;
         } else {
