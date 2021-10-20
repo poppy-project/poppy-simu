@@ -49,7 +49,7 @@ define([ 'dat', 'container' ], function(dat, container) {
 
   gui.controller.remote = gui.gui.addFolder('Contrôle à distance');
   gui.controller.remote.add(gui.guiData, 'remoteStatus').name('Synchroniser');
-  gui.controller.remoteAPI = gui.controller.remote.add(gui.guiData, 'remoteAPI').name('Rest API (Scratch)');
+  gui.controller.remoteAPI = gui.controller.remote.add(gui.guiData, 'remoteAPI').name('API Rest/Scratch');
   gui.controller.remoteHost = gui.controller.remote.add(gui.guiData, 'remoteHost').name('Hôte');
   gui.controller.remotePort = gui.controller.remote.add(gui.guiData, 'remotePort').name('Port');
   gui.controller.remoteFrequency = gui.controller.remote.add(gui.guiData, 'remoteFrequency', 1, 20, 1).name('Fréquence');

@@ -23,10 +23,10 @@ define([ 'ergojr', 'pypot', 'gui' ], function(ERGOJR, PYPOT, gui) {
     console.log(value);
     if (value) {
       console.log(gui.controller.remoteAPI.name);
-      gui.controller.remoteAPI.name("Rest API (Scratch)");
+      gui.controller.remoteAPI.name("API Rest/Scratch");
     } else {
       console.log(gui.controller.remoteAPI.name);
-      gui.controller.remoteAPI.name("Snap API");
+      gui.controller.remoteAPI.name("API Snap");
     }
   });
 
